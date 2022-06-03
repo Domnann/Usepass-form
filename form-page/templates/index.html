@@ -1,0 +1,53 @@
+
+<main class="main">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
+        <!-- Remix icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- Swiper.js styles -->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="./static/css/form.css">
+        
+    </head>
+    
+    <body class="body">
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="./form.html">
+                <h2 class="logo">Usepass Form</h2>
+            </a>
+                <div class="list list-right">
+                    <button class="btn place-items-center" id="theme-toggle-btn">
+                        <i class="ri-sun-line sun-icon"></i>
+                        <i class="ri-moon-line moon-icon"></i>
+                    </button>
+                </div>
+            </nav>
+    </header>
+    
+    <form action="/" method="GET/POST"  class="input-form" id="d-grid" >
+        
+      <br><br><button class="btn" id="input-label">HOME PAGE </button><br><br>
+      <button class="btn" id="input-label" ><a href="{{ url_for('signin') }}"> Sign in</a></button><br><br>
+      <button class="btn" id="input-label" ><a href="{{ url_for('signup') }}">Sign up</a> </button><br>
+    </form>
+    
+    <footer class="footer">
+      
+      <p>This work is a copyright of <strong>SINZU ACADEMY</strong>.</p>
+    
+    </footer>
+    <script src="./static/js/form.js"></script>
+
+    </body> 
+    
+    <script src="form.js"></script>
+      
+</main> 

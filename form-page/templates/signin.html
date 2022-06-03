@@ -1,0 +1,48 @@
+<main class="main">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>team - form | Home</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
+        <!-- Remix icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- Swiper.js styles -->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="./static/css/form.css">
+    </head>
+    <body class="body">
+        <header class="header" id="header">
+            <nav class="navbar container">
+                <a href="">
+                    <h2 class="logo">Usepass Form</h2>
+                </a>
+                   <div class="list list-right">
+                       <button class="btn place-items-center" id="theme-toggle-btn">
+                           <i class="ri-sun-line sun-icon"></i>
+                           <i class="ri-moon-line moon-icon"></i>
+                       </button>
+                   </div>
+               </nav>
+        </header>
+        <form action="/signin" method="GET/post"  class="input-form" id="d-grid" >
+          
+          <br><br><button class="btn" id="input-label"><a href="{{ url_for('index') }}">BACK TO HOME PAGE</a> </button><br><br>
+
+          <label for="user-email" id="input-label">Email:</label>
+          <input name="user-email" type="email"  id="input-field" placeholder="Enter your email address" ><br>
+
+
+          <label for="password" id="input-label">Password:</label>
+          <input type="text" min="18" max="20" name="password" placeholder="Enter your password" important id="input-field"><br>
+          
+          <button class="btn" type=submit id="submit">Submit</button>
+      </form>
+      <footer class="footer">
+        <p>This work is a copyright of <strong>SINZU ACADEMY</strong>.</p>
+      </footer>
+      <script src="./static/js/form.js"></script>
+     </body>  
+</main> 
